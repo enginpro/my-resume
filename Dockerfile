@@ -7,4 +7,4 @@ RUN apt install vim git -y
 RUN mkdir data
 RUN touch data/docker
 
-EXPOSE 85
+EXPOSE 80

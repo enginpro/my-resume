@@ -1,16 +1,17 @@
 name: Resume ci Build
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+  #push:
+  #branches: [ "main" ]
+  #pull_request:
+  #branches: [ "main" ]
 
 jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # github runner
 
     steps:
     - uses: actions/checkout@v4
